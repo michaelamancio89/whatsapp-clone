@@ -19,7 +19,7 @@ export class Firebase{
 
     init(){
 
-        if (!this._initialized) {
+        if (!window._initializedFirebase) {
 
             firebase.initializeApp(this._config);
 
@@ -29,7 +29,7 @@ export class Firebase{
 
             });
 
-            this._initialized = true;
+            window._initializedFirebase = true;
         }
         
     }
