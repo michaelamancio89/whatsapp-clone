@@ -1,5 +1,5 @@
-import { Firebase } from '../util/Firebase';
-import { Model } from './Model';
+import { Firebase } from "../util/Firebase";
+import { Model } from "./Model";
 
 export class Chat extends Model{
 
